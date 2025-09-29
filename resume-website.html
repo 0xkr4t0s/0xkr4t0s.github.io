@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rawnak Yazdhani - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            font-size: 1em;
+            margin-top: 15px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        h3 {
+            color: #764ba2;
+            margin-bottom: 8px;
+            font-size: 1.3em;
+        }
+
+        h4 {
+            color: #555;
+            margin-bottom: 5px;
+            font-size: 1.1em;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .company {
+            color: #764ba2;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #666;
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .skill-category ul {
+            margin-left: 0;
+            list-style: none;
+        }
+
+        .skill-category li:before {
+            content: "▹ ";
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        .professional-skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .professional-skills li {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 5px;
+            list-style: none;
+        }
+
+        .professional-skills li:before {
+            content: "✓ ";
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            header {
+                background: #667eea;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rawnak Yazdhani</h1>
+            <div class="contact-info">
+                Werribee, VIC 3030 •
+                <a href="tel:0494108645">0494108645</a> •
+                <a href="mailto:rawnaky@icloud.com">rawnaky@icloud.com</a>
+            </div>
+        </header>
+
+        <div class="content">
+            <section>
+                <h2>Professional Summary</h2>
+                <p>Strong verbal and written communication skills with clients, colleagues, and employers; maintained a polite and professional presence and working manner. Client-orientated with exceptional customer service management as well as general management skills. Reliable and able to solve problems promptly and with a high level of accuracy.</p>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Reverse Engineering & Analysis</h4>
+                        <ul>
+                            <li>Ghidra (binary analysis, decompilation, vulnerability research)</li>
+                            <li>Malware analysis and disassembly techniques</li>
+                            <li>Assembly language and low-level debugging</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Security Tools & Platforms</h4>
+                        <ul>
+                            <li>Kali Linux (penetration testing, security auditing)</li>
+                            <li>MCP (Model Context Protocol) implementation and security</li>
+                            <li>Vulnerability assessment and exploitation frameworks</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Programming & Development</h4>
+                        <ul>
+                            <li>Rust (systems programming, memory-safe application development)</li>
+                            <li>Secure coding practices and threat modelling</li>
+                            <li>Network protocol analysis</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Operating Systems</h4>
+                        <ul>
+                            <li>Windows, Linux, and Unix system internals</li>
+                            <li>System hardening and security configurations</li>
+                            <li>Privilege escalation and access control mechanisms</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Additional Competencies</h4>
+                        <ul>
+                            <li>Network security and traffic analysis</li>
+                            <li>Incident response and forensics</li>
+                            <li>Security documentation and technical reporting</li>
+                            <li>Cross-functional team collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2>Professional Skills</h2>
+                <ul class="professional-skills">
+                    <li>Cooperation and coordination</li>
+                    <li>Time management skills and organisation</li>
+                    <li>Adaptability and flexibility</li>
+                    <li>Problem-solving</li>
+                    <li>High level of accuracy</li>
+                    <li>Systems and software programs</li>
+                    <li>Network development</li>
+                    <li>Interpersonal communication skills</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Work History</h2>
+                
+                <div style="margin-bottom: 30px;">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Receptionist Administrator</span> — 
+                            <span class="company">Quest Sanctuary Lakes</span>
+                        </div>
+                        <span class="date">07/2022 to 03/2024</span>
+                    </div>
+                    <div style="color: #666; margin-bottom: 10px;">Point Cook, VIC</div>
+                    <ul>
+                        <li>Troubleshot time-sensitive technical issues</li>
+                        <li>Answered incoming calls, directing clients to appropriate individuals addressing specific needs</li>
+                        <li>Received packages and documents, applying appropriate internal policies relating to chain of custody</li>
+                        <li>Maintained professional and courteous customer interactions amongst reception staff</li>
+                        <li>Monitored visitor access and maintained situational awareness to promote on-site security and safety</li>
+                        <li>Managed daily cleaning operations whilst maintaining high standards of room presentation for corporate and leisure guests</li>
+                        <li>Ensured quality and compliance for cleaning operations, assisted with rostering of housekeeping staff, and resolved any issues or customer complaints</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Sales Representative</span> — 
+                            <span class="company">Prism Group</span>
+                        </div>
+                        <span class="date">01/2021 to 08/2021</span>
+                    </div>
+                    <div style="color: #666; margin-bottom: 10px;">Carlton, VIC</div>
+                    <ul>
+                        <li>Used body language and tone to ensure a positive manner towards customers for high-quality customer service</li>
+                        <li>Met daily sales quotas consistently and achieved strong results</li>
+                        <li>Promptly resolved all customer requests, questions, and complaints using objection-handling techniques, ensuring their questions were answered to help them understand the service</li>
+                        <li>Handled a wide range of customers, met their needs, and adapted to various communication styles</li>
+                        <li>Met with existing customers and prospects to discuss business needs and recommend optimal solutions</li>
+                    </ul>
+                </div>
+
+                <div style="margin-bottom: 30px;">
+                    <div class="job-header">
+                        <div>
+                            <span class="job-title">Retail Assistant</span> — 
+                            <span class="company">Faisal's Clothing</span>
+                        </div>
+                        <span class="date">01/2018 to 01/2019</span>
+                    </div>
+                    <div style="color: #666; margin-bottom: 10px;">Laverton, VIC</div>
+                    <ul>
+                        <li>Balanced and organised cash register by handling cash, counting change, and storing coupons</li>
+                        <li>Greeted customers, helped locate merchandise, and suggested suitable options</li>
+                        <li>Used POS system to process sales, returns, online orders, and gift card activations</li>
+                        <li>Approached browsing customers to initiate conversations to determine buying preferences</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2>References</h2>
+                <p>Available upon request</p>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
